@@ -10,7 +10,7 @@ const Home = () => {
                 <div className="home__headings">
                 <h1 className='home__heading'>
                 SO, YOU WANT TO TRAVEL TO
-                <span className='home__heading-big'>
+                <span className='heading-big'>
                     SPACE
                 </span>
                 </h1>

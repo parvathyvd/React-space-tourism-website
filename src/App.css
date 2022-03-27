@@ -66,6 +66,14 @@ width: 60%;
 
 /*************Home*************/
 
+.home{
+  background: url(../public/assets/home/background-home-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  height: 100%;
+}
+
 .home__container{
   width: 100%;
   color: #fff;
@@ -89,12 +97,7 @@ width: 60%;
   font-size: 2.8rem;
   letter-spacing: 0.3rem;
 }
-.home__heading-big{
-  display: block;
-  color: #fff;
-  font-size: 15rem;
-  font-family: 'Bellefair', serif;
-}
+
 .home__text{
   font-size: 1.6rem;
   color: var(--light-blue);
@@ -133,13 +136,58 @@ width: 60%;
 }
 
 
+/*************Destination*************/
 
-/**********Home*************/
-
-.home{
-  background: url(../public/assets/home/background-home-desktop.jpg);
+.destination{
+  background: url(../public/assets/destination/background-destination-desktop.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: none;
-  height: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vh;
+}
+
+.small__heading{
+  display: block;
+}
+.destination-list ul{
+  width: 500px;
+  display: flex;
+  text-transform: uppercase;
+  list-style: none;
+  justify-content: end;
+  transform: translate(calc(-0% - 390px), 30px);
+  width: 100%;
+  gap: 2rem;
+}
+.destination-list li button{
+  color: var(--light-blue);
+  font-family: var(--barow-condensed);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+.destination-list li button.btn-nav.active{
+  border-bottom: 3px solid #fff;
+}
+
+.destination-single{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.destination-image{
+  justify-self: center;
+  align-self: end;
+}
+.destination__desc{
+  padding: 2rem 4rem;
 }
