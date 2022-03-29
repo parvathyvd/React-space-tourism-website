@@ -272,9 +272,9 @@ width: 60%;
     text-align: center;
 }
 }
-@media screen and (max-width:768) {
+@media screen and (max-width:768px) {
   .heading-big{
-    font-size: 8rem;
+    font-size: 8rem !important;
     display: block;
     padding-top: 1rem;
   }
