@@ -175,6 +175,7 @@ width: 60%;
   background-size: cover;
   background-repeat: none;
   min-height: 100vh;
+  overflow:hidden ;
 }
 
 .home__container{
@@ -270,6 +271,13 @@ width: 60%;
     justify-self: center;
     text-align: center;
 }
+}
+@media screen and (max-width:768) {
+  .heading-big{
+    font-size: 8rem;
+    display: block;
+    padding-top: 1rem;
+  }
 }
 
 
@@ -367,6 +375,23 @@ width: 60%;
  .destination__line{
    width: 100%;
  }
+ .destination-image img{
+   max-width: 80%;
+   display: block;
+   margin: 0 auto;
+ }
+ .description{
+   padding: 2rem 2rem 2rem 2rem;
+ }
+ .small__heading-h2{
+  font-size: 2rem;
+ }
+}
+@media screen and (max-width: 768px) {
+  .destination__details{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 /********CREW*********/
@@ -463,6 +488,7 @@ width: 60%;
   align-items: center;
   text-align: center;
   overflow: hidden;
+  padding: 1rem 3rem;
 }
 .crew__info{
   display: flex;
@@ -473,15 +499,50 @@ width: 60%;
   align-items: center;
   transform: translateX(0);
 }
+.crew__info-details{
+  order: 1;
+}
 .crew__select{
   align-self: center;
   padding: 3rem 0;
+  order:2
+}
+.crew__image{
+  order:3;
 }
 .crew__bio{
     padding-right: 0%;
     padding: 3rem 12%;
 }
  }
+
+ @media screen and (max-width: 768px) {
+  .crew__name{
+    font-size: 3rem;
+   }
+   .crew__role{
+    font-size: 2.5rem;
+   }
+   .crew__info-details{
+    padding: 1rem;
+  }
+  .crew__info{
+    order: 3;
+  }
+  .crew__select{
+    align-self: center;
+    padding: 3rem 0;
+    order:0;
+  }
+  .crew__image{
+    display: block;
+    order:-1 !important;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+  }
+ }
+ 
  
 
 /********Technology*********/
@@ -600,7 +661,7 @@ order:2;
   .tech__image{
     order: 1;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -619,4 +680,13 @@ order:2;
     padding: 0rem  0rem  0rem 0rem;
   }
  }
+ @media screen and (max-width: 768px) {
+  .tech__image{
+    order: 1;
+    width: 100%;
+    height: 40vh;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  }
  
