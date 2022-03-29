@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
                 <div className="home__explore">
                     <NavLink to='/destination'>
-                    <a>EXPLORE</a>
+                    <nav href='/destination'>EXPLORE</nav>
                     </NavLink>
                 </div>
             </div>
