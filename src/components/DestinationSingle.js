@@ -1,8 +1,15 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import data from '../data.json'
+import data from '../data.json';
 
-const DestinationSingle = ({destination, curDestination}) => {
+const DestinationSingle = ({destination, curDestination, activeClass, setActiveClass, setCurDestination}) => {
+   
+ 
+    const onDestinationChangeHandler = (e) => {
+        e.preventDefault();
+        // console.log('click', e.target.value);
+        setCurDestination(e.target.value);
+        setActiveClass('active');
+    }
     return (
         <>
         {destination.name === curDestination &&
@@ -11,6 +18,13 @@ const DestinationSingle = ({destination, curDestination}) => {
                     <img src={destination.images.png} alt={destination.name} />
                 </div>
                 <div className="destination__desc">
+                <div className="destination-list">
+                    <ul>
+                    {data.destinations.map((destin)=>{
+                        return <li><button className={(activeClass && destin.name === curDestination)? 'btn-nav active' : 'btn-nav' } value={destin.name} onClick={onDestinationChangeHandler}>{destin.name}</button></li>
+                    })}
+                    </ul>
+                    </div>
                     <h1 className='heading-big2'>{destination.name}</h1>
                     <p className='description'>{destination.description}</p>
                     <div className="destination__line">

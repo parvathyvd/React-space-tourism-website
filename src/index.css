@@ -12,9 +12,9 @@
   --transition: all 0.4s ease;
   --barow-condensed : 'Barlow Condensed', sans-serif;
   --barow : 'Barlow', sans-serif;
---belle: 'Bellefair', serif;
-
+  --belle: 'Bellefair', serif;
 }
+
 html{
   font-size: 10px;
 }
