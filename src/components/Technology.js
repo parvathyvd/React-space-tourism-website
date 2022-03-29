@@ -8,7 +8,7 @@ const Technology = () => {
     const [techActive, setTechActive] = useState('active');
 
     return (
-        <div className='technology'>
+        <section className='technology'>
             <Header/>
             <div className="small__heading-tech">
                     <h2 className='small__heading-tech-h2'><span className="num">03</span><span className='small__heading-text'>SPACE LAUNCH 101</span></h2>
@@ -19,7 +19,7 @@ const Technology = () => {
                     techActive={techActive} setChooseTech={setChooseTech} setTechActive={setTechActive} key={index} />
                 })}
             </div>
-        </div>
+        </section>
     );
 };
 

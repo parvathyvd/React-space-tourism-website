@@ -10,7 +10,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
   padding: 4rem 0;
 }
 .header-line{
@@ -228,6 +227,7 @@ width: 60%;
   position: relative;
   box-sizing: content-box;
   z-index: 14;
+  cursor: pointer;
 }
 .home__explore::after{
   content: '';
@@ -305,8 +305,7 @@ width: 60%;
   display: flex;
   text-transform: uppercase;
   list-style: none;
-  justify-content: flex-end;
-  transform: translate(calc(-0% - 350px), 0px);
+  justify-content: flex-start;
   width: 100%;
   gap: 2rem;
 }

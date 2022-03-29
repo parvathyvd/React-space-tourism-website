@@ -10,8 +10,7 @@ const Destination = () => {
         return <DestinationSingle key={index} destination={dest} curDestination={curDestination} setCurDestination={setCurDestination} activeClass={activeClass} setActiveClass={setActiveClass} />
     })
     return (
-        <>
-        <div className='destination'>
+        <section className='destination'>
         <Header/>
             <div className="destination__container">
                 <div className="small__heading">
@@ -19,8 +18,7 @@ const Destination = () => {
                 </div>
                {renderDestination}
             </div>
-        </div>
-        </>
+        </section>
         
     );
 };

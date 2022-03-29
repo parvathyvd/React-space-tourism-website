@@ -7,7 +7,7 @@ const Crew = () => {
     const [selectCrewID, setSelectCrewID] = useState(0);
 
     return (
-        <div className='crew'>
+        <section className='crew'>
             <Header/>
             <div className="crew__container">
                 <div className="">
@@ -20,7 +20,7 @@ const Crew = () => {
                 })}
                
             </div>
-        </div>
+        </section>
     );
 };
 

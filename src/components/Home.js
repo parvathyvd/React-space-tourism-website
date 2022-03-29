@@ -4,8 +4,9 @@ import Header from './Header';
 
 const Home = () => {
     return (
-        <div className='home'>
-            <Header/>
+        <section className='home'>
+                        <Header/>
+
             <div className="home__container">
                 <div className="home__headings">
                 <h1 className='home__heading'>
@@ -22,7 +23,8 @@ const Home = () => {
                     </NavLink>
                 </div>
             </div>
-        </div>
+        </section>
+      
     );
 };
 
