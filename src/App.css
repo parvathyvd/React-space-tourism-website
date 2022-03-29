@@ -305,7 +305,7 @@ width: 60%;
   display: flex;
   text-transform: uppercase;
   list-style: none;
-  justify-content: end;
+  justify-content: flex-end;
   transform: translate(calc(-0% - 350px), 0px);
   width: 100%;
   gap: 2rem;
