@@ -21,7 +21,7 @@ html{
 
 body{
   font-size: 1.6rem;
-  min-width: 140rem;
+  max-width: 140rem;
   height: 100vh;
   margin: 0 auto;
 }
