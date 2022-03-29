@@ -20,8 +20,8 @@ const DestinationSingle = ({destination, curDestination, activeClass, setActiveC
                 <div className="destination__desc">
                 <div className="destination-list">
                     <ul>
-                    {data.destinations.map((destin)=>{
-                        return <li><button className={(activeClass && destin.name === curDestination)? 'btn-nav active' : 'btn-nav' } value={destin.name} onClick={onDestinationChangeHandler}>{destin.name}</button></li>
+                    {data.destinations.map((destin,index)=>{
+                        return <li key={index}><button className={(activeClass && destin.name === curDestination)? 'btn-nav active' : 'btn-nav' } value={destin.name} onClick={onDestinationChangeHandler}>{destin.name}</button></li>
                     })}
                     </ul>
                     </div>

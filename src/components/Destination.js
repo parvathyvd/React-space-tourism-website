@@ -6,8 +6,8 @@ import DestinationSingle from './DestinationSingle';
 const Destination = () => {
     const [curDestination, setCurDestination] = useState('Moon');
     const [activeClass, setActiveClass] = useState('acitve')
-    const renderDestination =  data.destinations.map((dest)=>{
-        return <DestinationSingle destination={dest} curDestination={curDestination} setCurDestination={setCurDestination} activeClass={activeClass} setActiveClass={setActiveClass} />
+    const renderDestination =  data.destinations.map((dest,index)=>{
+        return <DestinationSingle key={index} destination={dest} curDestination={curDestination} setCurDestination={setCurDestination} activeClass={activeClass} setActiveClass={setActiveClass} />
     })
     return (
         <>

@@ -314,9 +314,30 @@ width: 60%;
   display: block;
   padding-bottom: 1rem;
 }
+.destination-list li button.btn-nav{
+  display: block;
+  cursor: pointer;
+}
 .destination-list li button.btn-nav.active{
   border-bottom: 3px solid #fff;
 }
+.destination-list li button.btn-nav::after {
+  padding-bottom: 0.8rem;
+  display: block;
+  content: '';
+  border-bottom: 0px solid #fff;
+  width: 0%;
+}
+.destination-list li button.btn-nav:hover::after{
+  width: 100%;
+  border-bottom: 3px solid #fff;
+  transition: width 0.8s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.destination-list li button.btn-nav.active:hover{
+  border-bottom: 0px solid #fff;
+}
+
 
 .destination-single{
   display: grid;
